@@ -558,6 +558,41 @@ section {
 .author-card {
   height: 100%;
   padding: 22px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.author-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 22px rgba(17, 45, 98, 0.12);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.author-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.author-links a {
+  color: var(--primary-dark);
+  font-size: 1.05rem;
+}
+
+.author-links a:hover {
+  color: var(--primary);
 }
 
 .author-card h3 {
