@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 430" role="img" aria-labelledby="title desc">
+  <title id="title">ARVS System Architecture</title>
+  <desc id="desc">Flow diagram of GIS, AI feature extraction, and blockchain integrity for property valuation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#edf3ff"/>
+      <stop offset="100%" stop-color="#f7fbff"/>
+    </linearGradient>
+    <linearGradient id="hdr" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#1459d9"/>
+      <stop offset="100%" stop-color="#0b3f9f"/>
+    </linearGradient>
+    <style>
+      .box { fill: #ffffff; stroke: #cfe0ff; stroke-width: 2; rx: 14; }
+      .label { font: 600 20px 'Segoe UI', sans-serif; fill: #10213f; }
+      .sub { font: 500 14px 'Segoe UI', sans-serif; fill: #496080; }
+      .arr { stroke: #1f5ecf; stroke-width: 3; marker-end: url(#m); fill: none; }
+      .chip { fill: #edf4ff; stroke: #c8dcff; }
+      .chipText { font: 600 12px 'Segoe UI', sans-serif; fill: #2a4e79; }
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <polygon points="0,0 10,4 0,8" fill="#1f5ecf"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="980" height="430" fill="url(#bg)"/>
+  <rect x="24" y="24" width="932" height="52" rx="12" fill="url(#hdr)"/>
+  <text x="490" y="57" text-anchor="middle" style="font:700 22px 'Segoe UI',sans-serif;fill:#ffffff;">Automated Rating Valuation Workflow</text>
+
+  <rect class="box" x="48" y="112" width="260" height="220"/>
+  <text class="label" x="178" y="145" text-anchor="middle">GIS Valuation</text>
+  <text class="sub" x="178" y="172" text-anchor="middle">Accessibility and zoning</text>
+  <text class="sub" x="178" y="192" text-anchor="middle">Distance and location factors</text>
+  <rect class="chip" x="80" y="214" width="96" height="28" rx="8"/>
+  <text class="chipText" x="128" y="233" text-anchor="middle">AOP / LOP</text>
+  <rect class="chip" x="184" y="214" width="96" height="28" rx="8"/>
+  <text class="chipText" x="232" y="233" text-anchor="middle">EOL / DTMR</text>
+
+  <rect class="box" x="360" y="112" width="260" height="220"/>
+  <text class="label" x="490" y="145" text-anchor="middle">AI Feature Detection</text>
+  <text class="sub" x="490" y="172" text-anchor="middle">CNN on satellite and street images</text>
+  <text class="sub" x="490" y="192" text-anchor="middle">Bare land, vegetation, buildings</text>
+  <rect class="chip" x="392" y="214" width="96" height="28" rx="8"/>
+  <text class="chipText" x="440" y="233" text-anchor="middle">CNN Model</text>
+  <rect class="chip" x="496" y="214" width="96" height="28" rx="8"/>
+  <text class="chipText" x="544" y="233" text-anchor="middle">Class Output</text>
+
+  <rect class="box" x="672" y="112" width="260" height="220"/>
+  <text class="label" x="802" y="145" text-anchor="middle">Blockchain Integrity</text>
+  <text class="sub" x="802" y="172" text-anchor="middle">Keccak-256 report hashing</text>
+  <text class="sub" x="802" y="192" text-anchor="middle">Smart contract rule checks</text>
+  <rect class="chip" x="704" y="214" width="96" height="28" rx="8"/>
+  <text class="chipText" x="752" y="233" text-anchor="middle">PoA Chain</text>
+  <rect class="chip" x="808" y="214" width="96" height="28" rx="8"/>
+  <text class="chipText" x="856" y="233" text-anchor="middle">Audit Trail</text>
+
+  <path class="arr" d="M308 222 L352 222"/>
+  <path class="arr" d="M620 222 L664 222"/>
+
+  <rect x="308" y="348" width="364" height="54" rx="12" fill="#ffffff" stroke="#cfe0ff" stroke-width="2"/>
+  <text x="490" y="381" text-anchor="middle" style="font:700 18px 'Segoe UI',sans-serif;fill:#12305f;">Final Valuation = Land Value + Building Value + Feature Adjustments</text>
+</svg>
