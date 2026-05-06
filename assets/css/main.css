@@ -520,6 +520,11 @@ section {
   background: #0daa0a;
 }
 
+.download-btn[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
 .milestone-filter {
   display: flex;
   flex-direction: column;
@@ -553,6 +558,25 @@ section {
   font-weight: 600;
   color: #327257;
   margin-bottom: 6px;
+}
+
+.form-status {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  min-height: 1.2em;
+}
+
+.form-status--pending {
+  color: #5a7c2b;
+}
+
+.form-status--success {
+  color: #0a8a34;
+}
+
+.form-status--error {
+  color: #b3261e;
 }
 
 .author-card {

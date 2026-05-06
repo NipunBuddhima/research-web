@@ -419,7 +419,7 @@ interface and regression analysis form part of the back end. </p>
           <div class="col-lg-7" data-aos="fade-left" data-aos-delay="180">
             <div class="paper-card">
               <h3>General E-mail Template</h3>
-              <form class="row g-3" action="mailto:25-26J-512-Students.research@sliit.lk" method="post" enctype="text/plain">
+              <form class="row g-3" id="contact-form" data-emailjs-public-key="7MICB3lO1t8k5fHXT" data-emailjs-service-id="service_mhfdid5" data-emailjs-template-id="template_khg4tbd">
                 <div class="col-md-6">
                   <label for="name" class="form-label">Name</label>
                   <input type="text" id="name" name="name" class="form-control" required>
@@ -438,6 +438,9 @@ interface and regression analysis form part of the back end. </p>
                 </div>
                 <div class="col-12">
                   <button class="download-btn" type="submit">Send Email</button>
+                </div>
+                <div class="col-12">
+                  <p id="contact-status" class="form-status" role="status" aria-live="polite"></p>
                 </div>
               </form>
             </div>
@@ -487,6 +490,7 @@ interface and regression analysis form part of the back end. </p>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
     (function() {
